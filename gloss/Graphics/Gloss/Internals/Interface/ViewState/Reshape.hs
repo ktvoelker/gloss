@@ -24,5 +24,5 @@ viewState_reshape stateRef (width,height)
         --      We'll use the whole window.
         --
         GL.viewport     $= ( GL.Position 0 0
-                           , GL.Size (fromIntegral width) (fromIntegral height))
+                           , GL.Size (fromIntegral width * 2) (fromIntegral height * 2))
         postRedisplay stateRef
